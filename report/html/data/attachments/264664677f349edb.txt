@@ -1,0 +1,11 @@
+ERROR    phil:log.py:42  
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+ERROR    phil:log.py:42  
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}

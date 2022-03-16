@@ -1,0 +1,132 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-4QMU2SQ",
+    "children" : [ {
+      "name" : "11224-MainThread",
+      "children" : [ {
+        "name" : "4.使用正确格式的邮箱地址进行注册,过期验证码不能注册成功",
+        "uid" : "9ef1484869fcc946",
+        "parentUid" : "8a601b58d65e7af09917c4ae116e0abe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647411411702,
+          "stop" : 1647411412254,
+          "duration" : 552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "1.使用非正确格式的邮箱地址进行注册",
+        "uid" : "4ee0ec3836d824f9",
+        "parentUid" : "8a601b58d65e7af09917c4ae116e0abe",
+        "status" : "failed",
+        "time" : {
+          "start" : 1647411409659,
+          "stop" : 1647411410555,
+          "duration" : 896
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "3.使用正确格式的邮箱地址进行注册,错误的验证码不能注册成功",
+        "uid" : "78ab01a242835b7f",
+        "parentUid" : "8a601b58d65e7af09917c4ae116e0abe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647411411540,
+          "stop" : 1647411411700,
+          "duration" : 160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "6.未注册账号使用已注册的邮箱注册,不能注册成功",
+        "uid" : "740736cb5cf28690",
+        "parentUid" : "8a601b58d65e7af09917c4ae116e0abe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647411412419,
+          "stop" : 1647411413059,
+          "duration" : 640
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "1.未经",
+        "uid" : "90c136416038195e",
+        "parentUid" : "8a601b58d65e7af09917c4ae116e0abe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647411413062,
+          "stop" : 1647411413062,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "2.使用正确格式的邮箱地址进行注册,可以获得验证码",
+        "uid" : "953ab3222073b211",
+        "parentUid" : "8a601b58d65e7af09917c4ae116e0abe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647411410622,
+          "stop" : 1647411411538,
+          "duration" : 916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "5.已注册账号再次注册，不能注册成功",
+        "uid" : "1f0dffb326a9d133",
+        "parentUid" : "8a601b58d65e7af09917c4ae116e0abe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647411412256,
+          "stop" : 1647411412416,
+          "duration" : 160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8a601b58d65e7af09917c4ae116e0abe"
+    } ],
+    "uid" : "c634fcbde7049e81a8f41272f52291e3"
+  } ]
+}

@@ -1,0 +1,71 @@
+[ {
+  "uid" : "740736cb5cf28690",
+  "name" : "6.未注册账号使用已注册的邮箱注册,不能注册成功",
+  "time" : {
+    "start" : 1647411412419,
+    "stop" : 1647411413059,
+    "duration" : 640
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78ab01a242835b7f",
+  "name" : "3.使用正确格式的邮箱地址进行注册,错误的验证码不能注册成功",
+  "time" : {
+    "start" : 1647411411540,
+    "stop" : 1647411411700,
+    "duration" : 160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90c136416038195e",
+  "name" : "1.未经",
+  "time" : {
+    "start" : 1647411413062,
+    "stop" : 1647411413062,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f0dffb326a9d133",
+  "name" : "5.已注册账号再次注册，不能注册成功",
+  "time" : {
+    "start" : 1647411412256,
+    "stop" : 1647411412416,
+    "duration" : 160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "953ab3222073b211",
+  "name" : "2.使用正确格式的邮箱地址进行注册,可以获得验证码",
+  "time" : {
+    "start" : 1647411410622,
+    "stop" : 1647411411538,
+    "duration" : 916
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ef1484869fcc946",
+  "name" : "4.使用正确格式的邮箱地址进行注册,过期验证码不能注册成功",
+  "time" : {
+    "start" : 1647411411702,
+    "stop" : 1647411412254,
+    "duration" : 552
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ee0ec3836d824f9",
+  "name" : "1.使用非正确格式的邮箱地址进行注册",
+  "time" : {
+    "start" : 1647411409659,
+    "stop" : 1647411410555,
+    "duration" : 896
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

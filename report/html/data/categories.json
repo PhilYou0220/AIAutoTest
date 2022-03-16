@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: case1 注册--非邮箱格式，不应获得验证码失败\nassert {'code': 400,\\n 'error': 'gomail: could not send email 1: gomail: invalid address '\\n          '\"123456@qq\": mail: no angle-addr'} == {'message': '发送成功'}\n  Left contains 2 more items:\n  {'code': 400,\n   'error': 'gomail: could not send email 1: gomail: invalid address '\n            '\"123456@qq\": mail: no angle-addr'}\n  Right contains 1 more item:\n  {'message': '发送成功'}\n  Full diff:\n    {\n  -  'message': '发送成功',\n  +  'code': 400,\n  +  'error': 'gomail: could not send email 1: gomail: invalid address '\n  +           '\"123456@qq\": mail: no angle-addr',\n    }",
+      "children" : [ {
+        "name" : "1.使用非正确格式的邮箱地址进行注册",
+        "uid" : "4ee0ec3836d824f9",
+        "parentUid" : "62f49768203ea9c2afb0797e256457ea",
+        "status" : "failed",
+        "time" : {
+          "start" : 1647411409659,
+          "stop" : 1647411410555,
+          "duration" : 896
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "62f49768203ea9c2afb0797e256457ea"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

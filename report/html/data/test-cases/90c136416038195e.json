@@ -1,0 +1,69 @@
+{
+  "uid" : "90c136416038195e",
+  "name" : "1.未经",
+  "fullName" : "testcase.test_register_login.TestRegisterLoginSmoke#test_register_login_smoke_001",
+  "historyId" : "d3d2b9e9a31759cbc2310566a570d464",
+  "time" : {
+    "start" : 1647411413062,
+    "stop" : 1647411413062,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "注册-登录主流程正向用例"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=6)"
+  }, {
+    "name" : "tag",
+    "value" : "register"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_register_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegisterLoginSmoke"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4QMU2SQ"
+  }, {
+    "name" : "thread",
+    "value" : "11224-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_register_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=6)", "register" ]
+  },
+  "source" : "90c136416038195e.json",
+  "parameterValues" : [ ]
+}

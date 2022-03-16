@@ -1,0 +1,140 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_register_login",
+      "children" : [ {
+        "name" : "TestRegisterLogin",
+        "children" : [ {
+          "name" : "1.使用非正确格式的邮箱地址进行注册",
+          "uid" : "4ee0ec3836d824f9",
+          "parentUid" : "8a36090a2364fef82a61ccce35a46d38",
+          "status" : "failed",
+          "time" : {
+            "start" : 1647411409659,
+            "stop" : 1647411410555,
+            "duration" : 896
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "2.使用正确格式的邮箱地址进行注册,可以获得验证码",
+          "uid" : "953ab3222073b211",
+          "parentUid" : "8a36090a2364fef82a61ccce35a46d38",
+          "status" : "passed",
+          "time" : {
+            "start" : 1647411410622,
+            "stop" : 1647411411538,
+            "duration" : 916
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "3.使用正确格式的邮箱地址进行注册,错误的验证码不能注册成功",
+          "uid" : "78ab01a242835b7f",
+          "parentUid" : "8a36090a2364fef82a61ccce35a46d38",
+          "status" : "passed",
+          "time" : {
+            "start" : 1647411411540,
+            "stop" : 1647411411700,
+            "duration" : 160
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "4.使用正确格式的邮箱地址进行注册,过期验证码不能注册成功",
+          "uid" : "9ef1484869fcc946",
+          "parentUid" : "8a36090a2364fef82a61ccce35a46d38",
+          "status" : "passed",
+          "time" : {
+            "start" : 1647411411702,
+            "stop" : 1647411412254,
+            "duration" : 552
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "5.已注册账号再次注册，不能注册成功",
+          "uid" : "1f0dffb326a9d133",
+          "parentUid" : "8a36090a2364fef82a61ccce35a46d38",
+          "status" : "passed",
+          "time" : {
+            "start" : 1647411412256,
+            "stop" : 1647411412416,
+            "duration" : 160
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "6.未注册账号使用已注册的邮箱注册,不能注册成功",
+          "uid" : "740736cb5cf28690",
+          "parentUid" : "8a36090a2364fef82a61ccce35a46d38",
+          "status" : "passed",
+          "time" : {
+            "start" : 1647411412419,
+            "stop" : 1647411413059,
+            "duration" : 640
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8a36090a2364fef82a61ccce35a46d38"
+      }, {
+        "name" : "TestRegisterLoginSmoke",
+        "children" : [ {
+          "name" : "1.未经",
+          "uid" : "90c136416038195e",
+          "parentUid" : "7a51152c405a307d9a71bdfd0669a8cf",
+          "status" : "passed",
+          "time" : {
+            "start" : 1647411413062,
+            "stop" : 1647411413062,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7a51152c405a307d9a71bdfd0669a8cf"
+      } ],
+      "uid" : "8091b43f706ed479106cbb908182d4c0"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ]
+}

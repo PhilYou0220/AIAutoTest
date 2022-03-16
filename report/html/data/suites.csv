@@ -1,0 +1,13 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 16 14:16:52 CST 2022","Wed Mar 16 14:16:53 CST 2022","640","testcase","test_register_login","TestRegisterLogin","","","6.未注册账号使用已注册的邮箱注册,不能注册成功",""
+"passed","Wed Mar 16 14:16:51 CST 2022","Wed Mar 16 14:16:51 CST 2022","160","testcase","test_register_login","TestRegisterLogin","","","3.使用正确格式的邮箱地址进行注册,错误的验证码不能注册成功",""
+"passed","Wed Mar 16 14:16:53 CST 2022","Wed Mar 16 14:16:53 CST 2022","0","testcase","test_register_login","TestRegisterLoginSmoke","","","1.未经",""
+"passed","Wed Mar 16 14:16:52 CST 2022","Wed Mar 16 14:16:52 CST 2022","160","testcase","test_register_login","TestRegisterLogin","","","5.已注册账号再次注册，不能注册成功",""
+"passed","Wed Mar 16 14:16:50 CST 2022","Wed Mar 16 14:16:51 CST 2022","916","testcase","test_register_login","TestRegisterLogin","","","2.使用正确格式的邮箱地址进行注册,可以获得验证码",""
+"passed","Wed Mar 16 14:16:51 CST 2022","Wed Mar 16 14:16:52 CST 2022","552","testcase","test_register_login","TestRegisterLogin","","","4.使用正确格式的邮箱地址进行注册,过期验证码不能注册成功",""
+"failed","Wed Mar 16 14:16:49 CST 2022","Wed Mar 16 14:16:50 CST 2022","896","testcase","test_register_login","TestRegisterLogin","","","1.使用非正确格式的邮箱地址进行注册","
+        第一步
+        第二步
+        第三步
+        :return:
+        "

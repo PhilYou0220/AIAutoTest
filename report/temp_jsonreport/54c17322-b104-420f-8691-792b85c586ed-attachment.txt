@@ -1,0 +1,12 @@
+ERROR    phil:log.py:42  
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+DEBUG    phil:log.py:36  
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
