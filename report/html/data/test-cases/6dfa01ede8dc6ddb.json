@@ -1,0 +1,153 @@
+{
+  "uid" : "6dfa01ede8dc6ddb",
+  "name" : "4.登录注册流程--登录--登录",
+  "fullName" : "testcase.test_register_login.TestRegisterLoginSmoke#test_register_login_smoke_004",
+  "historyId" : "783c209610d536ddf2fe92b69dbd5943",
+  "time" : {
+    "start" : 1648721954986,
+    "stop" : 1648721955157,
+    "duration" : 171
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码200和实际状态码401\ntest_register_login.py:81 in test_register_login_smoke_004() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: token为None\ntest_register_login.py:83 in test_register_login_smoke_004() -> check.is_not_none(dict_return_data.get(\"token\"), f\"token为{__token}\")\n------------------------------------------------------------\nFailed Checks: 2",
+  "statusTrace" : "FAILURE: 预期和实际不一致 预期状态码200和实际状态码401\ntest_register_login.py:81 in test_register_login_smoke_004() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: token为None\ntest_register_login.py:83 in test_register_login_smoke_004() -> check.is_not_none(dict_return_data.get(\"token\"), f\"token为{__token}\")\n------------------------------------------------------------\nFailed Checks: 2",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestRegisterLoginSmoke",
+    "time" : {
+      "start" : 1648721954504,
+      "stop" : 1648721954729,
+      "duration" : 225
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码200和实际状态码401\ntest_register_login.py:81 in test_register_login_smoke_004() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: token为None\ntest_register_login.py:83 in test_register_login_smoke_004() -> check.is_not_none(dict_return_data.get(\"token\"), f\"token为{__token}\")\n------------------------------------------------------------\nFailed Checks: 2",
+    "statusTrace" : "FAILURE: 预期和实际不一致 预期状态码200和实际状态码401\ntest_register_login.py:81 in test_register_login_smoke_004() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: token为None\ntest_register_login.py:83 in test_register_login_smoke_004() -> check.is_not_none(dict_return_data.get(\"token\"), f\"token为{__token}\")\n------------------------------------------------------------\nFailed Checks: 2",
+    "steps" : [ {
+      "name" : "此条用例不比较返回值 断言token存在",
+      "time" : {
+        "start" : 1648721954986,
+        "stop" : 1648721955157,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "前提:\r\n1.打开网址http://106.75.154.221:8392/ 点击注册\r\n2.输入账号：autotest_register\r\n3.输入邮箱：1299639230@qq.com\r\n4.点击发送按钮\r\n5.成功获得验证码并输入收到的验证码\r\n6.点击下一步 验证码验证通过\r\n7.在密码框内输入密码123456..\r\n8.在确认密码框内再次输入密码123456..\r\n9.点击确定按钮 完成注册\r\n测试步骤:\r\n1.在账号栏输入账号autotest_register\r\n2.在密码栏输入密码123456..\r\n3.点击登录按钮，登录成功跳转到首页\r\n",
+        "time" : {
+          "start" : 1648721955067,
+          "stop" : 1648721955152,
+          "duration" : 85
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "259844bce1e691e",
+      "name" : "log",
+      "source" : "259844bce1e691e.txt",
+      "type" : "text/plain",
+      "size" : 826
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestRegisterLoginSmoke::0",
+    "time" : {
+      "start" : 1648721955157,
+      "stop" : 1648721955157,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "注册-登录主流程正向用例"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_register_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegisterLoginSmoke"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4QMU2SQ"
+  }, {
+    "name" : "thread",
+    "value" : "24608-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_register_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=4)", "smoke" ]
+  },
+  "source" : "6dfa01ede8dc6ddb.json",
+  "parameterValues" : [ ]
+}

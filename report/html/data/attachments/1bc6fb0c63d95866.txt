@@ -1,7 +1,0 @@
-DEBUG    phil:log.py:36  
-账号
- url:http://106.75.154.221:8391/api/valid-code/send
- 密码：
- 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
- 返回状态码: 400
- 返回值: {'error': '账号已存在', 'code': 400}

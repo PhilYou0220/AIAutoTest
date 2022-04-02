@@ -1,7 +1,0 @@
-DEBUG    phil:log.py:36  
-账号
- url:http://106.75.154.221:8391/api/valid-code/send
- 密码：
- 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
- 返回状态码: 400
- 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MNwGGpQlvPGunbtqFt5tLXta/GTLnxRGpI4Ep94qc39bWiMHMMFPLaok/9EloGs/Fw== IP: 106.75.154.221]', 'code': 400}

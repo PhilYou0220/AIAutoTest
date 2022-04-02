@@ -406,3 +406,1247 @@
  请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
  返回状态码: 400
  返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MNwGGpQlvPGunbtqFt5tLXta/GTLnxRGpI4Ep94qc39bWiMHMMFPLaok/9EloGs/Fw== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 11:49:39,136 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:49:39,220 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 11:49:40,384 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:49:40,460 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:49:40,634 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 11:49:41,210 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"835251","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 11:49:41,387 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 11:49:42,195 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MH6JPE+Eef6x8kPFcJ60eKKPA9lSSC3StLICvu5UZI21Ziac/+Jec9e1YF6v8+sDKg== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 11:56:22,296 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:56:22,372 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:56:22,531 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 11:56:23,087 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"264642","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 11:56:23,260 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 11:56:23,983 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MH6JPE+Eef6x8kPFcJ60eKIEJChBkDskSJFsNwxY54LAkD3okMlm+nyDj00M1yb6HA== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 11:59:27,032 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:59:27,114 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 11:59:28,334 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:59:28,415 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 11:59:28,584 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 11:59:29,189 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"240464","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 11:59:29,366 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 11:59:30,070 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MH6JPE+Eef6x8kPFcJ60eKLXv/+w4eIgRsIkRBBXRBxZa3NnonZSDzd9Uv5TmuXQOw== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 12:04:29,939 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:04:30,024 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 12:04:31,040 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:04:31,125 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:04:31,385 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 12:04:31,973 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"744094","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 12:04:32,143 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 12:04:32,873 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MH6JPE+Eef6x8kPFcJ60eKIm4GCBZ31PPLIOPyyyPf0QQygbydHIiHQIIeTYDpQo+Q== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 12:06:23,923 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:06:23,993 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:06:24,168 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 12:06:24,745 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"979778","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 12:06:24,919 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 12:06:25,717 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MH6JPE+Eef6x8kPFcJ60eKIDFDQ9gSdNMk5Ro9/oyBeSu+EQs+Oqygs+oH8gjc8wnQ== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 12:07:04,483 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:07:04,555 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 12:07:05,646 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:07:05,717 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:07:05,900 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 12:07:06,469 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"282857","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 12:07:06,637 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 12:07:07,471 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MLWxY4jmiiO3Ve8UTEjD+qAQBWwGdPu9ZesSOBU+IYPSjKLuW8d0YuEsMG1ueZWdMw== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 12:08:50,672 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:08:50,743 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 12:08:51,981 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:08:52,053 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 12:08:52,230 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 12:08:52,815 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"357695","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 12:08:52,995 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 12:08:53,765 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MLWxY4jmiiO3Ve8UTEjD+qA0yiScx/r4OQsE1rVWVQiifEMT4kFeVbCO8Cjmtu6k9Q== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 14:23:48,493 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 14:23:48,571 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 14:23:49,680 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 14:23:49,758 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 14:23:49,925 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 14:23:50,526 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"097794","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 14:23:50,689 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 14:23:51,431 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MPLDH1ZzF5m9isqd0oilEEycivxtrBg9sf00Ugg4eVhhZiac/+Jec9e1YF6v8+sDKg== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 14:28:46,390 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 14:28:46,460 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 14:28:47,596 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 14:28:47,664 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 14:28:47,824 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 密码：
+ 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-17 14:28:48,360 - phil-log-log.py-36- 
+账号
+ 密码：
+ url:http://106.75.154.221:8391/api/valid-code/check
+  请求参数: {"code":"393244","phone":"1299639230@qq.com"}
+ 返回状态码: 400
+ 返回值: {'error': '验证码已过期', 'code': 400}
+2022-03-17 14:28:48,519 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1234567@qq","username":"autotest_buyer"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-17 14:28:49,234 - phil-log-log.py-36- 
+账号
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 密码：
+ 请求参数: {"phone":"1927554128@qq.com","username":"autotest_register1"}
+ 返回状态码: 400
+ 返回值: {'error': 'gomail: could not send email 1: 550 Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MPLDH1ZzF5m9isqd0oilEEwndNK0sjnh281gl5wsP1pzRGKK/ry1caP2pj4SjyeWTQ== IP: 106.75.154.221]', 'code': 400}
+2022-03-17 14:32:59,961 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 14:33:00,046 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 14:33:01,248 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 16:53:50,160 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 16:53:50,238 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-17 16:53:51,224 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 17:02:56,513 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-17 17:02:57,685 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-18 18:51:38,024 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 10:24:45,946 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 10:24:46,034 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-21 10:24:47,232 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 10:28:24,438 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 10:28:24,506 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-21 10:28:25,598 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 11:00:29,474 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 11:00:29,550 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-21 11:00:30,688 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 11:02:43,559 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 11:02:43,643 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-21 11:02:44,808 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 11:03:53,664 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 11:03:53,736 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-21 11:03:54,883 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 18:08:31,279 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 18:10:41,263 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-21 18:13:04,530 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-22 15:59:18,962 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-22 15:59:59,981 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-22 16:00:34,671 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-22 16:00:37,278 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'}
+2022-03-22 17:36:27,889 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+  请求参数: {"phone":"123456@qq","username":"autotest_register"} 
+ 账号： 密码： 预期状态码400
+ 返回状态码: 200
+ 返回值: {'message': '发送成功'} 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+2022-03-22 17:39:14,905 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 17:48:47,039 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 17:52:46,116 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 17:53:38,616 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 18:00:22,080 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 18:03:01,568 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 18:03:16,704 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 18:59:09,270 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-22 18:59:10,226 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-23 19:46:31,094 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-23 19:46:31,733 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"455159","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-23 19:46:31,916 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"455159","email":"1299639230@qq.com","username":"autotest_registe","password":"9f95c68e7ceff25f65962a24e21b85c1"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-23 19:46:32,095 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_registe","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-03-27T23:46:29+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTIsImV4cCI6MTY0ODM5NTk4OSwib3JpZ19pYXQiOjE2NDgwMzU5ODl9.ToAJiZ2n_lHd3PfDqustCy9Nurz5nWfjEn2Yz8CDkyo'} 
+2022-03-24 11:27:20,079 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-24 11:27:20,410 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"455159","email":"1299639230@qq.com","username":"autotest_registe","password":"9f95c68e7ceff25f65962a24e21b85c1"}
+ 返回状态码: 400
+ 返回值: {'error': '账号已存在', 'code': 400}
+2022-03-24 11:27:20,444 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"455159","email":"1299639230@qq.com","username":"autotest_registe","password":"9f95c68e7ceff25f65962a24e21b85c1"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 400
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'error': '账号已存在', 'code': 400} 
+2022-03-24 11:27:20,620 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_registe","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-03-28T15:27:15+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTIsImV4cCI6MTY0ODQ1MjQzNSwib3JpZ19pYXQiOjE2NDgwOTI0MzV9.tnHnbqxuTrRCupwjiXFpTAWL3MRcmKYxEKeMWpSY1ic'} 
+2022-03-24 11:29:44,071 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-24 11:29:44,945 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"861272","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-24 11:29:45,142 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"861272","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648092584}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-24 11:29:45,300 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-03-28T15:29:39+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTMsImV4cCI6MTY0ODQ1MjU3OSwib3JpZ19pYXQiOjE2NDgwOTI1Nzl9.qvhNo6u_PU8yeJP3RIGW2cHx0ZsCmRPCwenl7Ap2rzM'} 
+2022-03-30 20:22:03,366 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-30 20:22:04,494 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-30 20:22:05,399 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"560595","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-30 20:22:05,584 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"560595","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648642924}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-30 20:22:05,755 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-04-04T00:22:00+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTQsIlRva2VuIjoiIiwiZXhwIjoxNjQ5MDAyOTIwLCJvcmlnX2lhdCI6MTY0ODY0MjkyMH0.qz6OsaUxdNgUg9Badv0GRH9XL4hoPpSMuZ6WFGvvrIE'} 
+2022-03-31 09:19:29,901 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 09:19:30,941 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 09:19:31,762 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"911657","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-31 09:19:31,935 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"911657","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689571}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-31 09:19:32,104 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-04-04T13:19:29+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTUsIlRva2VuIjoiIiwiZXhwIjoxNjQ5MDQ5NTY5LCJvcmlnX2lhdCI6MTY0ODY4OTU2OX0.uHnV_bEZrJfrdQ0FA79ZbxwDkhCcTpl5EL3B-Z0xozE'} 
+2022-03-31 09:20:21,680 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 09:20:22,665 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 09:20:23,578 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"391007","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-31 09:20:23,763 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"391007","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689622}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-31 09:20:23,929 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-04-04T13:20:21+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTYsIlRva2VuIjoiIiwiZXhwIjoxNjQ5MDQ5NjIxLCJvcmlnX2lhdCI6MTY0ODY4OTYyMX0.i5J4xBTNkunENL3kKQvLVVstLOyPH7iv5hH5cuYq38A'} 
+2022-03-31 09:20:53,161 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 09:20:54,167 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 09:20:55,059 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"351214","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-31 09:20:55,238 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"351214","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689654}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-31 09:20:55,414 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-04-04T13:20:53+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTcsIlRva2VuIjoiIiwiZXhwIjoxNjQ5MDQ5NjUzLCJvcmlnX2lhdCI6MTY0ODY4OTY1M30.zHAXSEEQcBGQdfURzTkwomfHevVSLHjaFtuoTUpM7hU'} 
+2022-03-31 13:58:33,923 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 13:58:35,086 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 13:58:35,556 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"351214","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689654}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-31 13:58:35,561 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"351214","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689654}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 400
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'error': '验证码错误', 'code': 400} 
+2022-03-31 13:58:35,714 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 返回状态码: 401
+ 返回值: {'code': 401, 'error': '用户名密码错误'}
+2022-03-31 13:58:35,720 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 401
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 401, 'error': '用户名密码错误'} 
+2022-03-31 13:59:34,007 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 13:59:35,308 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 13:59:35,799 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"351214","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689654}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-31 13:59:35,806 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"351214","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689654}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 400
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'error': '验证码错误', 'code': 400} 
+2022-03-31 13:59:35,975 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 返回状态码: 401
+ 返回值: {'code': 401, 'error': '用户名密码错误'}
+2022-03-31 13:59:35,981 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 401
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 401, 'error': '用户名密码错误'} 
+2022-03-31 14:03:06,982 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 14:03:08,290 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 14:03:08,779 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"351214","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689654}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-31 14:03:08,785 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"351214","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648689654}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 400
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'error': '验证码错误', 'code': 400} 
+2022-03-31 14:03:08,962 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 返回状态码: 401
+ 返回值: {'code': 401, 'error': '用户名密码错误'}
+2022-03-31 14:03:08,968 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 401
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 401, 'error': '用户名密码错误'} 
+2022-03-31 14:07:01,429 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 14:07:02,311 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"208773","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-31 14:07:02,489 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"208773","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648706821}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-31 14:07:02,648 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-04-04T18:06:59+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTgsIlRva2VuIjoiIiwiZXhwIjoxNjQ5MDY2ODE5LCJvcmlnX2lhdCI6MTY0ODcwNjgxOX0.ZkQAKSpkpa8kTtZVBfkDQCS5rz175ecfcQtQ-L59XAk'} 
+2022-03-31 14:07:03,903 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 18:16:13,817 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 18:16:14,728 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/check
+ 请求参数: {"code":"208517","phone":"1299639230@qq.com"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '验证码正确'}
+ 实际返回值: {'message': '验证码正确'} 
+2022-03-31 18:16:14,912 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"208517","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648721773}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'message': '注册成功'} 
+2022-03-31 18:16:15,084 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 200, 'expire': '2022-04-04T22:16:10+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MTksIlRva2VuIjoiIiwiZXhwIjoxNjQ5MDgxNzcwLCJvcmlnX2lhdCI6MTY0ODcyMTc3MH0.HP7NsjB6mcHYTEIsc55Cezv0XRQCXTOyEMeVF93Wyuw'} 
+2022-03-31 18:16:16,309 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 18:19:13,150 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"1299639230@qq.com","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 200
+ 预期返回值：{'message': '发送成功'}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 18:19:14,500 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/valid-code/send
+ 请求参数: {"phone":"123456@qq","username":"autotest_register"}
+ 账号：
+ 密码：
+ 预期状态码400
+ 实际返回状态码: 200
+ 预期返回值：{'error': 'gomail: could not send email 1: gomail: invalid address "123456@qq": mail: no angle-addr', 'code': 400}
+ 实际返回值: {'message': '发送成功'} 
+2022-03-31 18:19:14,977 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"208517","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648721773}
+ 返回状态码: 400
+ 返回值: {'error': '验证码错误', 'code': 400}
+2022-03-31 18:19:14,983 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/register
+ 请求参数: {"code":"208517","email":"1299639230@qq.com","username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1648721773}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 400
+ 预期返回值：{'message': '注册成功'}
+ 实际返回值: {'error': '验证码错误', 'code': 400} 
+2022-03-31 18:19:15,150 - phil-log-log.py-42- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 返回状态码: 401
+ 返回值: {'code': 401, 'error': '用户名密码错误'}
+2022-03-31 18:19:15,156 - phil-log-log.py-36- 
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 401
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 401, 'error': '用户名密码错误'} 

@@ -4,16 +4,16 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: case1 注册--非邮箱格式，不应获得验证码失败\nassert {'code': 400,\\n 'error': 'gomail: could not send email 1: gomail: invalid address '\\n          '\"123456@qq\": mail: no angle-addr'} == {'message': '发送成功'}\n  Left contains 2 more items:\n  {'code': 400,\n   'error': 'gomail: could not send email 1: gomail: invalid address '\n            '\"123456@qq\": mail: no angle-addr'}\n  Right contains 1 more item:\n  {'message': '发送成功'}\n  Full diff:\n    {\n  -  'message': '发送成功',\n  +  'code': 400,\n  +  'error': 'gomail: could not send email 1: gomail: invalid address '\n  +           '\"123456@qq\": mail: no angle-addr',\n    }",
+      "name" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码400和实际状态码200\ntest_register_login.py:115 in test_register_001() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: 预期和实际不一致 预期返回值{'error': 'gomail: could not send email 1: gomail: invalid address \"123456@qq\": mail: no angle-addr', 'code': 400}和实际返回值{'message': '发送成功'}不一致\ntest_register_login.py:116 in test_register_001() -> check.equal(dict_expect_return_data, dict_return_data,\nFAILURE: 数据库有此条数据\ntest_register_login.py:121 in test_register_001() -> check.is_none(result1, \"数据库有此条数据\")\n------------------------------------------------------------\nFailed Checks: 3",
       "children" : [ {
         "name" : "1.使用非正确格式的邮箱地址进行注册",
-        "uid" : "4ee0ec3836d824f9",
-        "parentUid" : "62f49768203ea9c2afb0797e256457ea",
+        "uid" : "2dd5d035e0a53755",
+        "parentUid" : "88d283d61f87c8bcc5b47ab32f4fb468",
         "status" : "failed",
         "time" : {
-          "start" : 1647411409659,
-          "stop" : 1647411410555,
-          "duration" : 896
+          "start" : 1648721953520,
+          "stop" : 1648721954501,
+          "duration" : 981
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,8 +23,75 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "62f49768203ea9c2afb0797e256457ea"
+      "uid" : "88d283d61f87c8bcc5b47ab32f4fb468"
+    }, {
+      "name" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码200和实际状态码400\ntest_register_login.py:67 in test_register_login_smoke_003() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: 预期和实际不一致 预期返回值{'message': '注册成功'}和实际返回值{'error': '验证码错误', 'code': 400}不一致\ntest_register_login.py:68 in test_register_login_smoke_003() -> check.equal(dict_expect_return_data, dict_return_data,\n------------------------------------------------------------\nFailed Checks: 2",
+      "children" : [ {
+        "name" : "3.登录注册流程--注册-设置密码",
+        "uid" : "d837d551f31e9fa7",
+        "parentUid" : "fad815071ea26c08c51902e0c8abfc33",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648721954812,
+          "stop" : 1648721954984,
+          "duration" : 172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fad815071ea26c08c51902e0c8abfc33"
+    }, {
+      "name" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码200和实际状态码401\ntest_register_login.py:81 in test_register_login_smoke_004() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: token为None\ntest_register_login.py:83 in test_register_login_smoke_004() -> check.is_not_none(dict_return_data.get(\"token\"), f\"token为{__token}\")\n------------------------------------------------------------\nFailed Checks: 2",
+      "children" : [ {
+        "name" : "4.登录注册流程--登录--登录",
+        "uid" : "6dfa01ede8dc6ddb",
+        "parentUid" : "b43b42f30ac2e77b82b101b65fce42e8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648721954986,
+          "stop" : 1648721955157,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b43b42f30ac2e77b82b101b65fce42e8"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "IndexError: tuple index out of range",
+      "children" : [ {
+        "name" : "2.登录注册流程--注册--输入验证码",
+        "uid" : "58bc73d1527137f1",
+        "parentUid" : "2c6752fe25a95e5634d9e2bf3ed0f246",
+        "status" : "broken",
+        "time" : {
+          "start" : 1648721954729,
+          "stop" : 1648721954806,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2c6752fe25a95e5634d9e2bf3ed0f246"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }

@@ -1,0 +1,14 @@
+ERROR    phil:log.py:42  
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 返回状态码: 401
+ 返回值: {'code': 401, 'error': '用户名密码错误'}
+DEBUG    phil:log.py:36  
+ url:http://106.75.154.221:8391/api/user/login
+ 请求参数: {"username":"autotest_register","password":"9f95c68e7ceff25f65962a24e21b85c1","timestamp":1647999816}
+ 账号：
+ 密码：
+ 预期状态码200
+ 实际返回状态码: 401
+ 预期返回值：{'code': 200, 'expire': '2022-03-27T13:48:08+08:00', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NCwiZXhwIjoxNjQ4MzYwMDg4LCJvcmlnX2lhdCI6MTY0ODAwMDA4OH0.GwDE9ttLx86Fn8SRiSZdc2anp8VB9su6H0LnhoLqs78'}
+ 实际返回值: {'code': 401, 'error': '用户名密码错误'}

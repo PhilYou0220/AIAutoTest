@@ -1,71 +1,51 @@
 [ {
-  "uid" : "953ab3222073b211",
-  "name" : "2.使用正确格式的邮箱地址进行注册,可以获得验证码",
+  "uid" : "d837d551f31e9fa7",
+  "name" : "3.登录注册流程--注册-设置密码",
   "time" : {
-    "start" : 1647411410622,
-    "stop" : 1647411411538,
-    "duration" : 916
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1f0dffb326a9d133",
-  "name" : "5.已注册账号再次注册，不能注册成功",
-  "time" : {
-    "start" : 1647411412256,
-    "stop" : 1647411412416,
-    "duration" : 160
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9ef1484869fcc946",
-  "name" : "4.使用正确格式的邮箱地址进行注册,过期验证码不能注册成功",
-  "time" : {
-    "start" : 1647411411702,
-    "stop" : 1647411412254,
-    "duration" : 552
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "78ab01a242835b7f",
-  "name" : "3.使用正确格式的邮箱地址进行注册,错误的验证码不能注册成功",
-  "time" : {
-    "start" : 1647411411540,
-    "stop" : 1647411411700,
-    "duration" : 160
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "740736cb5cf28690",
-  "name" : "6.未注册账号使用已注册的邮箱注册,不能注册成功",
-  "time" : {
-    "start" : 1647411412419,
-    "stop" : 1647411413059,
-    "duration" : 640
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4ee0ec3836d824f9",
-  "name" : "1.使用非正确格式的邮箱地址进行注册",
-  "time" : {
-    "start" : 1647411409659,
-    "stop" : 1647411410555,
-    "duration" : 896
+    "start" : 1648721954812,
+    "stop" : 1648721954984,
+    "duration" : 172
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "90c136416038195e",
-  "name" : "1.未经",
+  "uid" : "58bc73d1527137f1",
+  "name" : "2.登录注册流程--注册--输入验证码",
   "time" : {
-    "start" : 1647411413062,
-    "stop" : 1647411413062,
-    "duration" : 0
+    "start" : 1648721954729,
+    "stop" : 1648721954806,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3c378cf095a7a278",
+  "name" : "1.登录注册流程--注册--输入账号邮箱",
+  "time" : {
+    "start" : 1648721952336,
+    "stop" : 1648721953151,
+    "duration" : 815
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2dd5d035e0a53755",
+  "name" : "1.使用非正确格式的邮箱地址进行注册",
+  "time" : {
+    "start" : 1648721953520,
+    "stop" : 1648721954501,
+    "duration" : 981
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6dfa01ede8dc6ddb",
+  "name" : "4.登录注册流程--登录--登录",
+  "time" : {
+    "start" : 1648721954986,
+    "stop" : 1648721955157,
+    "duration" : 171
+  },
+  "status" : "failed",
   "severity" : "normal"
 } ]

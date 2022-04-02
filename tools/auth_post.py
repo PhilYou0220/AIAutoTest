@@ -6,6 +6,7 @@ import json
 
 
 class Auth(object):
+    """requests请求时加上 verify=False 避免ssl认证 不然有时会报错 requests.exceptions.SSLError"""
 
     def base_post(self, username, password):
         # 测试环境帐号
@@ -22,7 +23,7 @@ class Auth(object):
             "timestamp": timestamp
         }
         # 由于指定了headers json 可以不用转换
-        r1 = requests.post(url=url, json=data1, headers=headers).json()
+        r1 = requests.post(url=url, json=data1, headers=headers, verify=False).json()
 
         try:
             if r1.get("token"):  # 判断是否有能通过键获取值 如果不能会抛key error
@@ -39,7 +40,7 @@ class Auth(object):
         headers = {
             "Authorization": real_token
         }
-        resp = requests.post(url=url, json=json.loads(data2), headers=headers)
+        resp = requests.post(url=url, json=json.loads(data2), headers=headers, verify=False)
         real_status_code = resp.status_code
         dict_r = resp.json()
         if dict_r.get("error"):
@@ -47,15 +48,16 @@ class Auth(object):
                 f" \n账号{username}\n url:{url}\n 密码：{password}\n 请求参数: {data2}\n 返回状态码: {real_status_code}\n 返回值: {dict_r}")
         return dict_r, real_status_code
 
-    @staticmethod
-    def register_post(url, data):
+    # @outer
+    # @staticmethod
+    def register_post(self, url, data):
         url = url
         data = data
         headers = {"content-type": "application/json; charset=utf-8"}
-        res = requests.post(url=url, json=json.loads(data), headers=headers)
+        res = requests.post(url=url, json=json.loads(data), headers=headers, verify=False)
         real_status_code = res.status_code
         dict_r = res.json()
-        if not dict_r.get("error"):
+        if dict_r.get("error"):
             log.error(
                 f" \n url:{url}\n 请求参数: {data}\n 返回状态码: {real_status_code}\n 返回值: {dict_r}")
         return dict_r, real_status_code

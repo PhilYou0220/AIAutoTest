@@ -1,4 +1,24 @@
 {
+  "d5dd5be2caeb931dbf28fbc87f958e07" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "58bc73d1527137f1",
+      "status" : "broken",
+      "statusDetails" : "IndexError: tuple index out of range",
+      "time" : {
+        "start" : 1648721954729,
+        "stop" : 1648721954806,
+        "duration" : 77
+      }
+    } ]
+  },
   "c3b1d409e81f67ba626da3b9415f0bab" : {
     "statistic" : {
       "failed" : 1,
@@ -9,89 +29,53 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4ee0ec3836d824f9",
+      "uid" : "2dd5d035e0a53755",
       "status" : "failed",
-      "statusDetails" : "AssertionError: case1 注册--非邮箱格式，不应获得验证码失败\nassert {'code': 400,\\n 'error': 'gomail: could not send email 1: gomail: invalid address '\\n          '\"123456@qq\": mail: no angle-addr'} == {'message': '发送成功'}\n  Left contains 2 more items:\n  {'code': 400,\n   'error': 'gomail: could not send email 1: gomail: invalid address '\n            '\"123456@qq\": mail: no angle-addr'}\n  Right contains 1 more item:\n  {'message': '发送成功'}\n  Full diff:\n    {\n  -  'message': '发送成功',\n  +  'code': 400,\n  +  'error': 'gomail: could not send email 1: gomail: invalid address '\n  +           '\"123456@qq\": mail: no angle-addr',\n    }",
+      "statusDetails" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码400和实际状态码200\ntest_register_login.py:115 in test_register_001() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: 预期和实际不一致 预期返回值{'error': 'gomail: could not send email 1: gomail: invalid address \"123456@qq\": mail: no angle-addr', 'code': 400}和实际返回值{'message': '发送成功'}不一致\ntest_register_login.py:116 in test_register_001() -> check.equal(dict_expect_return_data, dict_return_data,\nFAILURE: 数据库有此条数据\ntest_register_login.py:121 in test_register_001() -> check.is_none(result1, \"数据库有此条数据\")\n------------------------------------------------------------\nFailed Checks: 3",
       "time" : {
-        "start" : 1647411409659,
-        "stop" : 1647411410555,
-        "duration" : 896
+        "start" : 1648721953520,
+        "stop" : 1648721954501,
+        "duration" : 981
       }
     } ]
   },
-  "64a5452a867e63f6aa73d0f34355789a" : {
+  "c8906dac6a673d39b40c895661bd3acd" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9ef1484869fcc946",
-      "status" : "passed",
+      "uid" : "d837d551f31e9fa7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码200和实际状态码400\ntest_register_login.py:67 in test_register_login_smoke_003() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: 预期和实际不一致 预期返回值{'message': '注册成功'}和实际返回值{'error': '验证码错误', 'code': 400}不一致\ntest_register_login.py:68 in test_register_login_smoke_003() -> check.equal(dict_expect_return_data, dict_return_data,\n------------------------------------------------------------\nFailed Checks: 2",
       "time" : {
-        "start" : 1647411411702,
-        "stop" : 1647411412254,
-        "duration" : 552
+        "start" : 1648721954812,
+        "stop" : 1648721954984,
+        "duration" : 172
       }
     } ]
   },
-  "85789b5eb2da31f7f9406c51170bc311" : {
+  "783c209610d536ddf2fe92b69dbd5943" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "78ab01a242835b7f",
-      "status" : "passed",
+      "uid" : "6dfa01ede8dc6ddb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: FAILURE: 预期和实际不一致 预期状态码200和实际状态码401\ntest_register_login.py:81 in test_register_login_smoke_004() -> check.equal(status_code, real_status_code, f\"预期和实际不一致 预期状态码{status_code}和实际状态码{real_status_code}\")\nFAILURE: token为None\ntest_register_login.py:83 in test_register_login_smoke_004() -> check.is_not_none(dict_return_data.get(\"token\"), f\"token为{__token}\")\n------------------------------------------------------------\nFailed Checks: 2",
       "time" : {
-        "start" : 1647411411540,
-        "stop" : 1647411411700,
-        "duration" : 160
-      }
-    } ]
-  },
-  "cfd8ba081989bb830555116bbea0e139" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "740736cb5cf28690",
-      "status" : "passed",
-      "time" : {
-        "start" : 1647411412419,
-        "stop" : 1647411413059,
-        "duration" : 640
-      }
-    } ]
-  },
-  "730400945bf658eaadeb8e60112bcccf" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "953ab3222073b211",
-      "status" : "passed",
-      "time" : {
-        "start" : 1647411410622,
-        "stop" : 1647411411538,
-        "duration" : 916
+        "start" : 1648721954986,
+        "stop" : 1648721955157,
+        "duration" : 171
       }
     } ]
   },
@@ -105,31 +89,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "90c136416038195e",
+      "uid" : "3c378cf095a7a278",
       "status" : "passed",
       "time" : {
-        "start" : 1647411413062,
-        "stop" : 1647411413062,
-        "duration" : 0
-      }
-    } ]
-  },
-  "3fef804f6a21f0e7d94a91dfb159bf0c" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1f0dffb326a9d133",
-      "status" : "passed",
-      "time" : {
-        "start" : 1647411412256,
-        "stop" : 1647411412416,
-        "duration" : 160
+        "start" : 1648721952336,
+        "stop" : 1648721953151,
+        "duration" : 815
       }
     } ]
   }

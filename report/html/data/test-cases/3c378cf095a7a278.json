@@ -1,0 +1,130 @@
+{
+  "uid" : "3c378cf095a7a278",
+  "name" : "1.登录注册流程--注册--输入账号邮箱",
+  "fullName" : "testcase.test_register_login.TestRegisterLoginSmoke#test_register_login_smoke_001",
+  "historyId" : "d3d2b9e9a31759cbc2310566a570d464",
+  "time" : {
+    "start" : 1648721952336,
+    "stop" : 1648721953151,
+    "duration" : 815
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestRegisterLoginSmoke",
+    "time" : {
+      "start" : 1648721952105,
+      "stop" : 1648721952334,
+      "duration" : 229
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "前提:打开网址http://106.75.154.221:8392/ 点击注册\r\n测试步骤:\r\n1.输入账号：autotest_register、\r\n2.输入邮箱：1299639230@qq.com\r\n3.点击发送按钮",
+      "time" : {
+        "start" : 1648721952416,
+        "stop" : 1648721953150,
+        "duration" : 734
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f3257468c090a2ff",
+      "name" : "log",
+      "source" : "f3257468c090a2ff.txt",
+      "type" : "text/plain",
+      "size" : 316
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestRegisterLoginSmoke::0",
+    "time" : {
+      "start" : 1648721953151,
+      "stop" : 1648721953151,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "注册-登录主流程正向用例"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_register_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegisterLoginSmoke"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4QMU2SQ"
+  }, {
+    "name" : "thread",
+    "value" : "24608-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_register_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)", "smoke" ]
+  },
+  "source" : "3c378cf095a7a278.json",
+  "parameterValues" : [ ]
+}

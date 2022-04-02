@@ -14,8 +14,8 @@ class ParseData(object):
         password = case["password"]
         status_code = case["status_code"]
         name = case["name"]
-        functionname = case["functionname"]
-        return id, method, url, data, expect_return_data, username, password, status_code, name, functionname
+        case_step = case["case_step"]
+        return id, method, url, data, expect_return_data, username, password, status_code, name, case_step
         # except Exception as e:
         #     log.error(e)
 

@@ -1,7 +1,0 @@
-DEBUG    phil:log.py:36  
-账号
- url:http://106.75.154.221:8391/api/valid-code/check
- 密码：
- 请求参数: {"code":"autotest_register","phone":"1299639230@qq.com"}
- 返回状态码: 400
- 返回值: {'error': '验证码错误', 'code': 400}
